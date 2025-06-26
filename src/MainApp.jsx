@@ -3,6 +3,7 @@ import useChoreoTheme from './theme/Theme.js';
 import {IntlProvider} from 'react-intl';
 import App from './MCPInspector/index';
 import {SnackbarProvider} from 'notistack';
+import {ChoreoSnackbarProvider} from "./MCPInspector/components/ChoreoSystem/Snackbar/SnackbarProvider";
 
 function MainApp() {
     const theme = useChoreoTheme(false);
@@ -10,9 +11,9 @@ function MainApp() {
         <>
             <ThemeProvider theme={theme}>
                 <IntlProvider locale="en" messages={{}}>
-                    <SnackbarProvider>
+                    <ChoreoSnackbarProvider>
                         <App/>
-                    </SnackbarProvider>
+                    </ChoreoSnackbarProvider>
                 </IntlProvider>
             </ThemeProvider>
         </>
