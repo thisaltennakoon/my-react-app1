@@ -13,8 +13,7 @@ import { z } from 'zod';
 import { Box, Grid, Typography } from '@material-ui/core';
 import Page from './components/ChoreoSystem/layouts/Page';
 import { MenuSubAPIManagement } from './components/ChoreoSystem/Icons/generated';
-// import { ReactComponent as MCPInspectorConnect
-// } from './components/ChoreoSystem/Images/Templates/MCPInspectorConect';
+import MCPInspectorConnect from './components/ChoreoSystem/Images/Templates/MCPInspectorConect.svg';
 import { cacheToolOutputSchemas } from './utils/schemaUtils';
 import { useConnection } from './lib/hooks/useConnection';
 import { Tabs, TabsList, TabsTrigger } from './components/ui/tabs';
@@ -280,7 +279,7 @@ const App = ({
                   justifyContent="center"
                 >
                   <Box>
-                    {/* <MCPInspectorConnect /> */}
+                    <img src={MCPInspectorConnect} alt="MCP Inspector Connect" />
                   </Box>
                   <Typography variant="h4">
                     Connect to an MCP server to start inspecting
