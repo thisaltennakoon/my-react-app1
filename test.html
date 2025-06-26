@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+    <script src="/Users/thisal/Desktop/wso2/Now/mcp1/my-react-app1/dist/mcp-inspector.umd.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script>
+    const rootElement = document.getElementById('root');
+    // React 17 way
+    // Use default export
+    ReactDOM.render(React.createElement(MCPInspector.default), rootElement);
+    // Or, named export:
+    // ReactDOM.render(React.createElement(ReactHelloLib.HelloWorld), rootElement);
+</script>
+</body>
+</html>
